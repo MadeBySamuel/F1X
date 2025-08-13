@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3d53kt8jj1ta"]
+
+[ext_resource type="Texture2D" uid="uid://b2yvmb6bjn5ym" path="res://FormulaModels/McLaren.png" id="1_wqo35"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wqo35"]
+size = Vector2(129, 54)
+
+[node name="Car" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.52588e-05, 0)
+scale = Vector2(0.291103, 0.291103)
+texture = ExtResource("1_wqo35")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, -4)
+shape = SubResource("RectangleShape2D_wqo35")
